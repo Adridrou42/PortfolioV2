@@ -8,26 +8,37 @@
 </head>
 
 
-<body>
-    <header>
-        <a href="Code/HTML/accueil" class="B01">
+<body class="main">
+    <nav>
+        <a href="Code/HTML/accueil.html" class="B01 lien_header">
             Accueil
         </a>
-        <a href="Code/HTML/parcours" class="B02">
+        <a href="Code/HTML/parcours.html" class="B02 lien_header">
             Parcours
         </a>
-        <a href="Code/HTML/competences" class="B03">
+        <a href="Code/HTML/competences.html" class="B03 lien_header">
             Compétences
         </a>
-        <a href="Code/HTML/projets" class="B04">
+        <a href="Code/HTML/projets.html" class="B04 lien_header">
             Projets
         </a>
-        <a href="Code/HTML/veilles" class="B05">
+        <a href="Code/HTML/veilles.html" class="B05 lien_header">
             Veilles
         </a>
-        <a href="Code/HTML/contact" class="B06">
+        <a href="Code/HTML/contact.html" class="B06 lien_header">
             Contact
         </a>
-    </header>
+    </nav>
+
+    <main> <!-- Conteneur affichant les pages secondaires -->
+        <iframe id="conteneur" src="Code/HTML/accueil.html"></iframe>
+    </main>
+
+    <!-- Charge les sons et la musique -->
+    <audio id="son_survol" src="Assets/Media/button_hover.wav"></audio>
+    <audio id="son_clic" src="Assets/Media/button_pressed.wav"></audio>
+
+    <!-- Charge les scriptes JS -->
+	<script src="Code/JavaScript/onglets.js "></script>
 </body>
 </html>
