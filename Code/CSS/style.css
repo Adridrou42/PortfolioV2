@@ -83,3 +83,20 @@ iframe {
 	height: 100%;
 	border: none;
 }
+
+article {
+    border-radius: 2dvh;
+	border: solid, 0.2dvh, #fefefe;
+    display: inline-block;
+}
+
+/* =========== PROJETS ============ */
+
+article:hover {
+	background-color: #FFFFFF40;
+}
+
+.prog_logo { /* Taille et position des logos dans la page technos */
+	height: 12dvh;
+	margin: 1dvh;
+}
