@@ -11,10 +11,10 @@
 /*-----------------====={Body}=====------------------*/
 body { /* Configurations générales. */
 	font-family : Texte;
-	font-size: 4dvh;
-	line-height: 4dvh;
+	font-size: 3dvh;
+	line-height: 3dvh;
 	text-align: center;
-	color : #d1d1d1;
+	color : #ffffff;
 	text-shadow: 0.1dvh 0.2dvh rgb(0, 0, 0, 0.404);
 	margin: 0;
 }
@@ -90,13 +90,65 @@ article {
     display: inline-block;
 }
 
-/* =========== PROJETS ============ */
+/* =========== COMPÉTENCES ============ */
 
-article:hover {
-	background-color: #FFFFFF40;
+.competences > article {
+	min-width: 20dvh;
+	background-color: #FFD60070;
+	font-size: 3dvh;
+}
+
+.competences > article:hover {
+	background-color: #FFD600A0;
 }
 
 .prog_logo { /* Taille et position des logos dans la page technos */
 	height: 12dvh;
 	margin: 1dvh;
+}
+
+/* =========== PROJETS ============ */
+
+.projets > article {
+	background-color: #76FF0370;
+	border-radius: 1dvh;
+	display: inline-block;
+	max-width: 50dvh;
+	margin-top: 2dvh;
+	margin-bottom: 2dvh;
+}
+
+.icon {
+	height: 4dvh;
+}
+
+.projets > article > video {
+	width: 100%;
+}
+
+.article_header {
+	font-size: 4dvh;
+	padding: 1dvh;
+	border-bottom: solid 0.2dvh #FEFEFE;
+}
+
+.article_footer {
+	margin-top: 1dvh;
+	border-top: solid 0.2dvh #FEFEFE;
+	display: flex;
+}
+
+.article_footer > a {
+	padding: 1dvh;
+	display: inline-block;
+	width: 100%;
+	border-radius: 1dvh;
+}
+
+.article_footer > a:hover {
+	background-color: #76FF03C0;
+}
+
+.projets > article:hover {
+	background-color: #76FF03A0;
 }
