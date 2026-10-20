@@ -17,6 +17,7 @@ body { /* Configurations générales. */
 	color : #ffffff;
 	text-shadow: 0.1dvh 0.2dvh rgb(0, 0, 0, 0.404);
 	margin: 0;
+	overflow-y: visible;
 }
 
 .main {
@@ -24,6 +25,15 @@ body { /* Configurations générales. */
     margin-right: 5dvh;
     background-image: url("../../Assets/Images/debug_wallpaper.jpg");
     background-size: cover;
+	overflow: hidden;
+}
+
+
+@media (max-width: 160dvh) { /* Adaptativité à un écran de portable */
+	.main {
+		margin-left: 1dvh;
+		margin-right: 1dvh;
+	}
 }
 
 
@@ -32,6 +42,7 @@ nav { /* Position des boutons. */
     display: flex;
     justify-content: space-between;
     padding: 0;
+	overflow-x: auto;
 }
 
 nav > a { /* Style des boutons. */
@@ -74,8 +85,8 @@ header {
 /* =========== GÉNÉRAL ============ */
 
 /* Taille du conteneur. */
-main { /* Style et positionnement de la boîte main */
-	height:90dvh;
+main {
+	height:93dvh;
 } 	
 
 iframe {
@@ -90,12 +101,19 @@ article {
     display: inline-block;
 }
 
+p {
+	margin: 1dvh;
+}
+
 /* =========== COMPÉTENCES ============ */
 
 .competences > article {
-	min-width: 20dvh;
+	width: 20dvh;
+	display: inline-block;
 	background-color: #FFD60070;
 	font-size: 3dvh;
+	padding-bottom: 1dvh;
+	margin-top: 1dvh;
 }
 
 .competences > article:hover {
@@ -109,20 +127,39 @@ article {
 
 /* =========== PROJETS ============ */
 
-.projets > article {
+.projets > header {
+	position: fixed;
+	width: calc(100% - 4dvh - 2px);
+}
+
+.projets > main {
+	column-width: 40dvh;
+	column-count: auto;
+	column-fill: balance;
+	column-gap: 2dvh;
+	height: auto;
+	min-height: 90dvh;
+	padding-top: 10dvh;
+}
+
+.projets > main > article {
 	background-color: #76FF0370;
 	border-radius: 1dvh;
-	display: inline-block;
-	max-width: 50dvh;
-	margin-top: 2dvh;
-	margin-bottom: 2dvh;
+	display: block;
+	width: auto;
+	margin: 0 0 2dvh;
+	/* Empêche une carte d'être coupée entre deux colonnes. */
+	break-inside: avoid;
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
 }
 
 .icon {
 	height: 4dvh;
 }
 
-.projets > article > video {
+article > video {
+	display: block; /* supprime l'espace vide sous la vidéo (alignement inline) */
 	width: 100%;
 }
 
@@ -149,6 +186,6 @@ article {
 	background-color: #76FF03C0;
 }
 
-.projets > article:hover {
+.projets > main > article:hover {
 	background-color: #76FF03A0;
 }
