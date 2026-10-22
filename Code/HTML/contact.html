@@ -6,8 +6,7 @@
 	</head>
 	<body class="contact page">
 		<header class="B06">CONTACT</header>
-			
-		
+
 
 		<!-- Utilisation de EmailJS  -->
 		<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
@@ -16,22 +15,38 @@
 				emailjs.init("uCPIP5yiMWEWBPVpB"); // Clef API publique
 			})();
 		</script>
-
-		<form id="contact-form" class="form">
-			<div>
-				<input type="text" name="nom" placeholder="Nom" required>
-				<input type="text" name="prenom" placeholder="Prénom" required>
-			</div><div>
-				<input type="mail" name="courriel" placeholder="Courriel" required>
-				<input type="tel" name="tel" placeholder="Téléphone" required>
-			</div><br><br>
 			
-			<input  class="message" type="text" name="objet" placeholder="Objet" required><br>
-			<textarea class="message" name="message" placeholder="Votre message..." rows="5" required></textarea><br>
 
-			<input type="submit" value="Envoyer" class="button">
-    	</form>
-		<br>
+		<section class="u01">
+			<article>
+				<form id="contact-form" class="form">
+					<input type="text" name="nom" placeholder="Nom" tabindex="1" required>
+					<input type="text" name="prenom" placeholder="Prénom" tabindex="2" required>
+					<input type="mail" name="courriel" placeholder="Courriel" tabindex="3" required>
+					<input type="tel" name="tel" placeholder="Téléphone" tabindex="4" required>
+					<br>
+					<input  class="message" type="text" name="objet" placeholder="Objet" tabindex="5" required><br>
+					<textarea class="message" name="message" placeholder="Votre message..." rows="5" tabindex="6" required></textarea><br>
+
+					<input type="submit" value="Envoyer" tabindex="7" class="button">
+				</form>
+			</article>
+		</section>	
+
+		<section class="u02">
+			<article>
+				<article>
+					<h2>Courriel</h2>
+					<p>adycabanel@gmail.com</p>
+				</article>
+				<article>
+					<h2>Numéro de téléphone</h2>
+					<p>07 48 61 52 38</p>
+				</article>
+			</article>
+		</section>
+
+
 
 		<script>
 			function isValidEmail(email) {
