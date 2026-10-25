@@ -192,6 +192,7 @@ img {
 .r05 {
 	width: calc(40% - 2dvh);
 	height: 57dvh;
+	text-align: justify;
 }
 
 .r06 {
@@ -235,6 +236,17 @@ img {
 
 	.r06 {
 		display: block;
+	}
+}
+
+@media (max-width: 80dvh) {
+	.r02 {
+		height: 30dvh;
+		width: calc(100% - 2dvh);
+	}
+
+	.r03 {
+		width: calc(100% - 2dvh);
 	}
 }
 
@@ -473,4 +485,9 @@ input {
 textarea {
 	border-radius: 1dvh;
 	padding: 1dvh;
+	height: 50dvh;
+}
+
+.message {
+	width: calc(100% - 5dvh);
 }
