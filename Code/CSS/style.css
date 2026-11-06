@@ -112,6 +112,10 @@ h2 {
 	font-size: 3dvh;
 }
 
+h3 {
+	text-align: left;
+}
+
 iframe {
 	width: 100%;
 	height: 100%;
@@ -417,6 +421,42 @@ article > video {
 
 .icon {
 	height: 4dvh;
+}
+
+/* =========== VEILLES ============ */
+
+.veille_header {
+	font-family: texte;
+	font-size: 3dvh;
+	padding: 0.5dvh;
+	background-image: none;
+}
+
+.veilles > article {
+	background-color: #2979FF70;
+	display: block;
+	margin: 1dvh;
+	margin-bottom: 0%;
+	height: 20dvh;
+}
+
+.veilles > article:hover {
+	background-color: #2979FF90;
+}
+
+.veilles > article > aside {
+	float: left;
+	border-right: solid 0.2dvh #FEFEFE;
+	margin-right: 1dvh;
+}
+
+aside > img {
+	height: 19.5dvh;
+	width: auto;
+}
+
+.veilles > article > p {
+	text-align: justify;
 }
 
 /* =========== CONTACT ============ */
