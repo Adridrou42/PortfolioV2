@@ -432,7 +432,12 @@ article > video {
 	background-image: none;
 }
 
-.veilles > article {
+.veilles > a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.veilles > a > article {
 	background-color: #2979FF70;
 	display: block;
 	margin: 1dvh;
@@ -440,11 +445,11 @@ article > video {
 	height: 20dvh;
 }
 
-.veilles > article:hover {
+.veilles > a > article:hover {
 	background-color: #2979FF90;
 }
 
-.veilles > article > aside {
+.veilles > a > article > aside {
 	float: left;
 	border-right: solid 0.2dvh #FEFEFE;
 	margin-right: 1dvh;
@@ -455,7 +460,11 @@ aside > img {
 	width: auto;
 }
 
-.veilles > article > p {
+.veilles > a > article > p {
+	text-align: justify;
+}
+
+.article-veille > main > p {
 	text-align: justify;
 }
 
