@@ -455,17 +455,42 @@ article > video {
 	margin-right: 1dvh;
 }
 
+.veilles > a > article > p {
+	text-align: justify;
+}
+
 aside > img {
 	height: 19.5dvh;
 	width: auto;
 }
 
-.veilles > a > article > p {
+/* === Articles === */
+
+header > a > img {
+	height: 6dvh;
+	border: solid 0.3dvh #fefefe;
+}
+
+.article_veille > header {
+	display: flex;
+	justify-content:space-between ;
+	background-color: #2979FF90;
+}
+
+.article_veille > main {
+	background-color: #2979FF70;
+	border: solid 0.2dvh #FEFEFE;
+	height: auto;
+	margin: 1dvh;
+	border-radius: 1dvh;
+}
+
+.article_veille > main > p {
 	text-align: justify;
 }
 
-.article-veille > main > p {
-	text-align: justify;
+.article_veille > main > h1 {
+	line-height: 5dvh;
 }
 
 /* =========== CONTACT ============ */
