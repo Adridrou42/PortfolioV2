@@ -493,6 +493,11 @@ header > a > img {
 	line-height: 5dvh;
 }
 
+.article_veille > main > article {
+	margin: 1dvh;
+	padding: 1dvh;
+	width: calc(100% - 4dvh);
+}
 /* =========== CONTACT ============ */
 
 .contact > section > article {
