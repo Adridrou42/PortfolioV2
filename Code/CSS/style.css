@@ -498,6 +498,10 @@ header > a > img {
 	padding: 1dvh;
 	width: calc(100% - 4dvh);
 }
+
+.article_veille > main > article > a {
+	color: #76FF03;
+}
 /* =========== CONTACT ============ */
 
 .contact > section > article {
